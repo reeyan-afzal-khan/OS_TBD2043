@@ -1,19 +1,19 @@
 /*
 STEP 1: Start the program.
-STEP 2: Declare the variables pid,pid1,pid2. 
-STEP 3: Call fork() system call to create process. 
+STEP 2: Declare the variables pid,pid1,pid2.
+STEP 3: Call fork() system call to create process.
 STEP 4: If pid==-1, exit.
-STEP 5: Ifpid!=-1 , get the process id using getpid(). 
+STEP 5: If pid!=-1, get the process id using getpid().
 STEP 6: Print the process id.
-STEP 7:Stop the program.
+STEP 7: Stop the program.
 */
 
-#include<stdio.h> 
+#include<stdio.h>
 #include<unistd.h>
 #include<cstdlib>
 int main() {
-    int pid,pid1,pid2; 
-    pid=fork(); 
+    int pid,pid1,pid2;
+    pid=fork();
     if(pid==-1){
         printf("ERROR IN PROCESS CREATION \n");
         exit(1);
